@@ -1,6 +1,6 @@
 ### Agent-Deception-Via-Polynomial-Path-Planning
 
-![alt text 1](circle2_trajectories.png =200x) ![alt text 2](degree2_trajectories.png =200x)
+![alt text 1](images/circle_trajectories.png =200x) ![alt text 2](images/degree_trajectories.png =200x)
 
 This project develops a deceptive polynomial path planning algorithm, with the objective of guiding an agent towards a target destination while simultaneously misleading an adversarial observer into predicting a false goal. This approach is designed to maintain the security and privacy of the agent's intended path by strategically navigating in a deceptive manner.
 ## Installation
