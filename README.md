@@ -6,7 +6,7 @@ objective of guiding an agent towards a target destination while simultaneously
 misleading an adversarial observer into predicting a false goal. This approach
 is designed to obscure the agent's true goal by strategically navigating in a deceptive manner.
 
-![alt text 1](docs/overview_figure/overview_deception.pdf) 
+![alt text 1](docs/overview_figure/overview_deception.png) 
 *Figure 1. Illustration of the deceptive polynomial path planner pipeline. Our
 approach is designed to address factors of deception including distance from
 each goal (top left and right), movement direction (bottom left), and the
