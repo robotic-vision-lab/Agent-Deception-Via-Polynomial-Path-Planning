@@ -1,4 +1,4 @@
-### Agent-Deception-Via-Polynomial-Path-Planning
+#### Agent Deception Via Polynomial Path Planning
 
 ![alt text 1](example_images/degree_trajectories.png)
 
