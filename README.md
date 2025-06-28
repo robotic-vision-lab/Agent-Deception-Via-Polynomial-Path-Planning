@@ -7,19 +7,14 @@ Deception is a crucial tool for misleading and confusing adversaries, especially
 in sectors such as security, transportation, and surveillance, where the ability
 to conceal true intentions may lead to significant advantages.  
  
-
-
-
-
 ![alt text 1](docs/overview_figure/overview_deception.png) 
 *Figure 1. Illustration of the deceptive polynomial path planner pipeline. On
 the left side are the factors of deception that our planner uses to generate
-deceptive behaviors. These factors include goal/decoy proximity top
+deceptive behaviors. These factors include goal/decoy proximity (top
 row), goal/decoy alignment (bottom left), and the
 apparent goal of the agent, as inferred from its movement trend. As shown on the
 right,  an adversary must consider these factors when determining the agent's
-intentions, while the agent leverages these factors to create  deceptive
-plans.*
+intentions, while the agent strategically exploits these factors to generate deceptive plans.*
 
 This repository provides the source code that implements our deceptive
 polynomial path planner shown in Fig. 1. The planner generates deceptive
@@ -84,7 +79,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-To run the deceptive polynomial path planning algorithm, follow these instructions:
+To run the planner, follow these steps:
 
 1. Ensure that you have activated your conda environment and installed the required dependencies from the `requirements.txt` file.
 
@@ -98,23 +93,24 @@ The command above runs the algorithm 10 times with the specified input parameter
 
 Here's a brief explanation of the input parameters:
 ```
-- --degree: Degree of the polynomial to be fitted
-- --beta: Regularization parameter
-- --alternative_goals: Alternative goal locations
-- --points: Points on the trajectory
-- --circle_location: Location of the circle used in the path planning
-- --start_location: Start location of the robot/vehicle
-- --goal: The true goal location
-- --circle_beta: Circle constraint regularization parameter
-- --short_on: Enable/disable the shortest path constraint
-- --obs_on: Enable/disable the obstacle constraint
-- --title: Title for the output files
-- --ambiguity_on: Enable/disable the ambiguity constraint
-- --alt_angle_beta: Alternative angle regularization parameter
-- --curvature_on: Enable/disable the curvature constraint
-- --reg_beta: Regularization parameter for the trajectory fitting
-- --point_beta: Point constraint regularization parameter
-- --traj_folder_prefix: Prefix for the trajectory folder name
+--degree: Degree of the polynomial to be fitted
+--beta: Regularization parameter
+ --alternative_goals: Alternative goal locations
+ --points: Points on the trajectory
+ --circle_location: Location of the circle used in the path planning
+ --start_location: Start location of the robot/vehicle
+ --goal: The true goal location
+ --circle_beta: Circle constraint regularization parameter
+ --short_on: Enable/disable the shortest path constraint
+ --obs_on: Enable/disable the obstacle constraint
+ --title: Title for the output files
+ --ambiguity_on: Enable/disable the ambiguity constraint
+ --alt_angle_beta: Alternative angle regularization parameter
+ --curvature_on: Enable/disable the curvature constraint
+ --reg_beta: Regularization parameter for the trajectory fitting
+ --point_beta: Point constraint regularization parameter
+ --traj_folder_prefix: Prefix for the trajectory folder name
+ --points: Optional trajectory interpolation or constraint points (often same as goal)
 ```
 
 After each run, the resulting trajectories are stored in the
