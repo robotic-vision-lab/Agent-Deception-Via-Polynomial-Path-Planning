@@ -23,12 +23,12 @@ If you find this project useful, then please consider citing our project.
 
 ## Installation
 
-### Requirements
+#### Requirements
 
 - Ubuntu 22
 - Python 3.10.9
 
-### Setting up your environment
+#### Setting up your environment
 
 Set up your environment and install the required dependencies:
 
@@ -101,8 +101,14 @@ python deceptive_polynomials/utils/plot_trajectories --folder trajectories
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning/blob/main/LICENSE)
+
+## References
+
+This project utilizes code from the following projects:  
+
+* InformedRRTStar     https://github.com/AtsushiSakai/PythonRobotics/tree/master
 
 ## Acknowledgements
 
