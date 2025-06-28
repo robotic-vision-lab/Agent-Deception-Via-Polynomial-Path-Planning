@@ -76,8 +76,8 @@ Here's a brief explanation of the input parameters:
 
 
 After each run, the resulting trajectories are by default stored in the
-`trajectories/` folder. To plot all of the trajectories, use the following
-command:
+`trajectories/` folder. To visualize all of the trajectories using matplotlib,
+execute the following command:
 ```bash
 python deceptive_polynomials/utils/plot_trajectories --folder trajectories
 ``` 
