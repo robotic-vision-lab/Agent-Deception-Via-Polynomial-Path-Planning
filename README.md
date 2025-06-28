@@ -12,9 +12,10 @@ to conceal true intentions may lead to significant advantages.
 
 
 ![alt text 1](docs/overview_figure/overview_deception.png) 
-*Figure 1. Illustration of the deceptive polynomial path planner pipeline. Our
-approach is designed to address factors of deception including distance from
-each goal (top left and right), movement direction (bottom left), and the
+*Figure 1. Illustration of the deceptive polynomial path planner pipeline. On
+the left side are the factors of deception that our planner uses to generate
+deceptive behaviors. These factors include goal/decoy proximity top
+row),goal/decoy alignment (bottom left), and the
 apparent goal of the agent, as inferred from its movement trend.*
 
 This repository provides the source code that implements our deceptive
