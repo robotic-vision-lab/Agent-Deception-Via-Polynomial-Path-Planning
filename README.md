@@ -99,7 +99,7 @@ by the GAANN Fellowship, which enabled us to develop and advance this research.
 This work was initiated during an internship at the U.S. Army Combat
 Capabilities Development Command Army Research Laboratory under the DoD's
 HBCU/MI Summer Research Internship Program, where early development and
-evaluation of the deceptive path planning method began.
+evaluation of the deceptive polynomial path planner began.
 
 
 ## Citation
