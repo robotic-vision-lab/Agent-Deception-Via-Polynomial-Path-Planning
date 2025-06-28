@@ -14,9 +14,9 @@ is designed to obscure the agent's true goal by strategically navigating in a de
 
 ### Authors
 
-- Nolan B. Gutierrez [<img src="./docs/assets/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=2KSNiPQAAAAJ&hl=en)
-- Brian M. Sadler [<img src="./docs/assets/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=s9eCQn4AAAAJ&hl=en)
-- William J. Beksi [<img src="./docs/assets/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=lU2Z7MMAAAAJ&hl=en)
+- Nolan B. Gutierrez [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=2KSNiPQAAAAJ&hl=en)
+- Brian M. Sadler [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=s9eCQn4AAAAJ&hl=en)
+- William J. Beksi [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=lU2Z7MMAAAAJ&hl=en)
 
 ## Citation
 If you find this project useful, then please consider citing our project.  
