@@ -121,7 +121,7 @@ After each run, the resulting trajectories are stored in the
 `trajectories/` folder by default. To visualize all of the trajectories using matplotlib,
 execute the following command:
 ```bash
-python deceptive_polynomials/utils/plot_trajectories --folder trajectories
+python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
 ``` 
 
 ## License
