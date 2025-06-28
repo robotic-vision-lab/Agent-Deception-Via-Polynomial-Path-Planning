@@ -75,8 +75,8 @@ Here's a brief explanation of the input parameters:
 - --traj_folder_prefix: Prefix for the trajectory folder name
 
 
-After each run, the resulting trajectories are by default stored in the
-`trajectories/` folder. To visualize all of the trajectories using matplotlib,
+After each run, the resulting trajectories are stored in the
+`trajectories/` folder by default. To visualize all of the trajectories using matplotlib,
 execute the following command:
 ```bash
 python deceptive_polynomials/utils/plot_trajectories --folder trajectories
