@@ -123,7 +123,7 @@ python deceptive_polynomials/utils/plot_trajectories --folder trajectories
 
 This project utilizes code from the following project:  
 
-* InformedRRTStar     https://github.com/AtsushiSakai/PythonRobotics/tree/master
+* PythonRobotics https://github.com/AtsushiSakai/PythonRobotics
 
 ## Acknowledgements
 
