@@ -4,8 +4,7 @@
 Deceptive path planning involves an intelligent agent creating a plan that hides
 its true intentions while appearing to pursue an alternative goal.
 Deception is a crucial tool for misleading and confusing adversaries, especially
-in sectors where the ability to conceal true intentions may lead to significant
-advantages, including security, transportation, and surveillance.
+in sectors such as security, transportation, and surveillance, where the ability to conceal true intentions may lead to significant
  
 
 
