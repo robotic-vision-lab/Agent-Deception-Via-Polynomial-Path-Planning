@@ -101,7 +101,7 @@ evaluation of the deceptive path planning method began.
 ## Citation
 To cite this repository, please use the following citation
 ```bibtex
-@misc{gutierrez2025deceptive,
+@misc{gutierrez2025agent,
   author       = {Gutierrez, Nolan and Beksi, William J. and Sadler, Brian M.},
   title        = {Agent Deception Via Polynomial Path Planning},
   year         = 2025,
