@@ -56,12 +56,13 @@ If you find this project useful, please consider citing it using the following e
 #### Requirements
 
 - Ubuntu 22
-- Python 3.10.9
 - Miniconda3
 
 #### Setting up your environment
 
-Set up your environment and install the required dependencies:
+First, install [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) for
+your platform, then run the following:
+
 
 ```bash
 # Create a new conda environment with Python 3.10
