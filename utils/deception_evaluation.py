@@ -25,11 +25,7 @@ def cost_function(trajectory, distance_weight=0.1):
     :param distance_weight: float, the weight of the distance regularization term, default=0.1
     :return: float, the cost of the trajectory
     """
-    # Here, we use the integral over squared velocities plus a distance regularization term as the cost function
     vel_cost = np.sum(np.diff(trajectory, axis=0)**2)
-#    if distance_weight > 0:
-#        dist_cost = calculate_distance(trajectory)
-#        vel_cost += distance_weight * dist_cost
     return .1 * vel_cost
 
 
@@ -129,7 +125,6 @@ def simple_trajectory_optimization(start, goal, obstacles, num_steps=10):
         args=(start,goal,),
         method='SLSQP',
         constraints={'type': 'ineq', 'fun': collision_constraint, 'args': (obstacles,)},
-#        constraints= nonlin_con
     )
     opt_traj = np.vstack([start,res.x.reshape(-1, 2), goal])
     collided = collision_constraint(opt_traj, obstacles)
