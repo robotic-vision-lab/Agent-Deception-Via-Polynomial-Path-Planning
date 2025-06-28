@@ -10,8 +10,8 @@ transportation, and surveillance by deceiving possible intruders or adversaries.
 ![alt text 1](docs/overview_figure/overview_deception.png) 
 *Figure 1. Illustration of the deceptive polynomial path planner pipeline. Our approach is designed to address factors of deception including distance from each goal (top left and right), movement direction (bottom left), and the apparent goal of the agent after given the agent's trend.*
 
-This repository develops provides the source code that implements our deceptive
-polynomial path planner shown in Fig.~1. The planner generates deceptive
+This repository provides the source code that implements our deceptive
+polynomial path planner shown in Fig. 1. The planner generates deceptive
 behaviors that guide an agent towards a target destination while
 simultaneously
 misleading an adversarial observer into predicting a false goal. 
