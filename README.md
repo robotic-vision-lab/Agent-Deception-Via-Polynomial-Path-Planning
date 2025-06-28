@@ -37,7 +37,9 @@ misleading an adversarial observer into predicting a false goal.
 - William J. Beksi [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=lU2Z7MMAAAAJ&hl=en)
 
 ## Citation
-If you find this project useful, then please consider citing our project.  
+
+If you find this project useful, please consider citing it using the following entry:
+
 ```bibtex
 @misc{gutierrez2025agent,
   author       = {Gutierrez, Nolan and Beksi, William J. and Sadler, Brian M.},
@@ -94,6 +96,7 @@ To run the deceptive polynomial path planning algorithm, follow these instructio
 ```bash
 for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
 ```
+The \$i ensures that the loop index is correctly interpreted in the shell. If you're not using a shell loop, remove the backslash.
 The command above runs the algorithm 10 times with the specified input parameters. You can modify the input parameters as needed to suit your specific use case.
 
 Here's a brief explanation of the input parameters:
