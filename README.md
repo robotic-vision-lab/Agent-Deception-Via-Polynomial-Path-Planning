@@ -18,7 +18,7 @@ deceptive behaviors. These factors include goal/decoy proximity top
 row), goal/decoy alignment (bottom left), and the
 apparent goal of the agent, as inferred from its movement trend. As shown on the
 right,  an adversary must consider these factors when determining the agent's
-intentions, while the agent leverages these factors while creating deceptive
+intentions, while the agent leverages these factors to create  deceptive
 plans.*
 
 This repository provides the source code that implements our deceptive
