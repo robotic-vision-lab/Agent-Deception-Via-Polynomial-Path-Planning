@@ -8,14 +8,7 @@ in sectors such as security, transportation, and surveillance, where the ability
 to conceal true intentions may lead to significant advantages.
  
 
-## Table of Contents
-- [Overview](#overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Citation](#citation)
-- [License](#license)
-- [References](#references)
-- [Acknowledgements](#acknowledgements)
+
 
 
 ![alt text 1](docs/overview_figure/overview_deception.png) 
@@ -29,6 +22,15 @@ polynomial path planner shown in Fig. 1. The planner generates deceptive
 behaviors that guide an agent towards a target destination while
 simultaneously
 misleading an adversarial observer into predicting a false goal. 
+
+## Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Citation](#citation)
+- [License](#license)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
 
 ### Authors
 
