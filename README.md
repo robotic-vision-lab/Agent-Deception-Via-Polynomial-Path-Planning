@@ -57,34 +57,24 @@ If you find this project useful, please consider citing it using the following e
 
 - Ubuntu 22
 - Python 3.10.9
+- Miniconda3
 
 #### Setting up your environment
 
 Set up your environment and install the required dependencies:
 
-1. Install Python 3.10 on your Ubuntu 22 system. You can use pyenv to manage multiple Python versions on your machine.
+```bash
+# Create a new conda environment with Python 3.10
+conda create -n deception_env python=3.10 -y
+conda activate deception_env
 
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git
-   cd Agent-Deception-Via-Polynomial-Path-Planning
-   ```
+# Clone the repository
+git clone https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git
+cd Agent-Deception-Via-Polynomial-Path-Planning
 
-
-3. Create a virtual environment:
-
-   ```bash
-   python3.10 -m venv venv
-   ```
-   
-4. Activate the virtual environment
-   ```bash
-   source venv/bin/activate
-   ```
-5. Install the required Python packages:
-   ```bash
-    pip install -r requirements.txt
-   ```
+# Install required Python packages
+pip install -r requirements.txt
+```
 
 
 ## Usage
