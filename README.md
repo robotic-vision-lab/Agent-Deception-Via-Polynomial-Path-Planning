@@ -96,8 +96,8 @@ To cite this repository, please use the following citation
 ```bibtex
 @misc{gutierrez2025yourrepo,
   author       = {Gutierrez, Nolan and Beksi, William J. and Sadler, Brian M.},
-  title        = {Agent Deception Via.Polynomial Path.Planning},
+  title        = {Agent Deception Via.Polynomial Path Planning},
   year         = 2025,
-  howpublished = {\url{https://github.com/yourusername/yourrepo}},
+  howpublished = {\url{https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git}},
 }
 
