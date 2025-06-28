@@ -1,12 +1,8 @@
 ### Agent-Deception-Via-Polynomial-Path-Planning
 
-![alt text 1](images/circle_trajectories.png) ![alt text 2](images/degree_trajectories.png)
+![alt text 1](example_images/degree_trajectories.png)
 
 This project develops a deceptive polynomial path planning algorithm, with the objective of guiding an agent towards a target destination while simultaneously misleading an adversarial observer into predicting a false goal. This approach is designed to maintain the security and privacy of the agent's intended path by strategically navigating in a deceptive manner.
-## Installation
-The current repository has been tested with Ubuntu 22 using Python 3.8. To
-prepare your environment for working with out code, please execute the following
-commands in sequence:
 
 
 ## Requirements
@@ -23,8 +19,8 @@ Set up your environment and install the required dependencies:
 2. Clone the repository:
 together with 
    ```bash
-   git clone https://github.com/nolan-gutierrez/deceptive-path-planning.git
-   cd deceptive-path-planning
+   git clone https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git
+   cd Agent-Deception-Via-Polynomial-Path-Planning
    ```
 
 
@@ -50,7 +46,7 @@ To run the deceptive polynomial path planning algorithm, follow these instructio
 
 1. Ensure that you have activated your virtual environment and installed the required dependencies from the `requirements.txt` file.
 
-2. Use the following command to execute the `poly_curve_refined.py` script with the desired input parameters:
+2. Use the following command to execute the `test.py` script with the desired input parameters:
 
 ```bash
 for i in {1..10}; do python test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
