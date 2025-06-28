@@ -19,7 +19,7 @@ If you find this project useful, then please consider citing our project.
   year         = 2025,
   howpublished = {\url{https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git}},
 }
-
+```
 
 ## Installation
 
