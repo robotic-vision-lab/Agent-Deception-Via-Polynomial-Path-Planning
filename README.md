@@ -5,7 +5,7 @@ Deceptive path planning involves an intelligent agent creating a plan that hides
 its true intentions while appearing to pursue an alternative goal.
 Deception is a crucial tool for misleading and confusing adversaries, especially
 in sectors such as security, transportation, and surveillance, where the ability
-to conceal true intentions may lead to significant advantages.
+to conceal true intentions may lead to significant advantages.  
  
 
 
@@ -15,8 +15,11 @@ to conceal true intentions may lead to significant advantages.
 *Figure 1. Illustration of the deceptive polynomial path planner pipeline. On
 the left side are the factors of deception that our planner uses to generate
 deceptive behaviors. These factors include goal/decoy proximity top
-row),goal/decoy alignment (bottom left), and the
-apparent goal of the agent, as inferred from its movement trend.*
+row), goal/decoy alignment (bottom left), and the
+apparent goal of the agent, as inferred from its movement trend. As shown on the
+right,  an adversary must consider these factors when determining the agent's
+intentions, while the agent leverages these factors while creating deceptive
+plans.*
 
 This repository provides the source code that implements our deceptive
 polynomial path planner shown in Fig. 1. The planner generates deceptive
