@@ -58,7 +58,7 @@ together with
    ```
 
 
-### Usage
+## Usage
 
 To run the deceptive polynomial path planning algorithm, follow these instructions:
 
