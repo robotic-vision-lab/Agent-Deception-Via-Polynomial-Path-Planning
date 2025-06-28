@@ -53,7 +53,7 @@ To run the deceptive polynomial path planning algorithm, follow these instructio
 2. Use the following command to execute the `poly_curve_refined.py` script with the desired input parameters:
 
 ```bash
-for i in {1..10}; do test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000  --traj_folder_prefix ablation_; done
+for i in {1..10}; do python test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
 ```
 The command above runs the algorithm 10 times with the specified input parameters. You can modify the input parameters as needed to suit your specific use case.
 
@@ -78,6 +78,12 @@ Here's a brief explanation of the input parameters:
 - --traj_folder_prefix: Prefix for the trajectory folder name
 
 
+After each run, the resulting trajectories are by default stored in the
+`trajectories/` folder. To plot all of the trajectories, use the following
+command:
+```bash
+python utils/plot_trajectories --folder trajectories
+``` 
 
 ## License
 
