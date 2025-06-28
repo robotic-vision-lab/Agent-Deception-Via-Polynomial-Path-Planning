@@ -88,7 +88,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgements
 
-This project was made possible through the support of the Graduate Assistance in Areas of National Need (GAANN) Fellowship, a program funded by the U.S. Department of Education. We are grateful for the financial assistance provided by the GAANN Fellowship, which enabled us to develop and advance this research.
+This project was made possible through the support of the Graduate Assistance in
+Areas of National Need (GAANN) Fellowship, a program funded by the U.S.
+Department of Education. We are grateful for the financial assistance provided
+by the GAANN Fellowship, which enabled us to develop and advance this research.
+This work was initiated during an internship at the U.S. Army Combat
+Capabilities Development Command Army Research Laboratory under the DoD's
+HBCU/MI Summer Research Internship Program, where early development and
+evaluation of the deceptive path planning method began.
 
 
 ## Citation
