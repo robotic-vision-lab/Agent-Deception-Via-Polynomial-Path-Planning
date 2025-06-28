@@ -90,6 +90,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 This project was made possible through the support of the Graduate Assistance in Areas of National Need (GAANN) Fellowship, a program funded by the U.S. Department of Education. We are grateful for the financial assistance provided by the GAANN Fellowship, which enabled us to develop and advance this research.
 
-together with 
 
 ## Citation
+To cite this repository, please use the following citation
+```bibtex
+@misc{gutierrez2025yourrepo,
+  author       = {Gutierrez, Nolan and Beksi, William J. and Sadler, Brian M.},
+  title        = {Agent Deception Via.Polynomial Path.Planning},
+  year         = 2025,
+  howpublished = {\url{https://github.com/yourusername/yourrepo}},
+}
+
