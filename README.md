@@ -4,13 +4,25 @@
 Deceptive path planning involves an intelligent agent creating a plan that hides
 its true intentions while appearing to pursue an alternative goal.
 Deception is a crucial tool for misleading and confusing adversaries, especially
-in sectors such as security, transportation, and surveillance, where the ability to conceal true intentions may lead to significant
+in sectors such as security, transportation, and surveillance, where the ability
+to conceal true intentions may lead to significant advantages.
  
 
+## Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Citation](#citation)
+- [License](#license)
+- [References](#references)
+- [Acknowledgements](#acknowledgements)
 
 
 ![alt text 1](docs/overview_figure/overview_deception.png) 
-*Figure 1. Illustration of the deceptive polynomial path planner pipeline. Our approach is designed to address factors of deception including distance from each goal (top left and right), movement direction (bottom left), and the apparent goal of the agent after given the agent's trend.*
+*Figure 1. Illustration of the deceptive polynomial path planner pipeline. Our
+approach is designed to address factors of deception including distance from
+each goal (top left and right), movement direction (bottom left), and the
+apparent goal of the agent, as inferred from its movement trend.*
 
 This repository provides the source code that implements our deceptive
 polynomial path planner shown in Fig. 1. The planner generates deceptive
@@ -20,9 +32,9 @@ misleading an adversarial observer into predicting a false goal.
 
 ### Authors
 
-- Nolan B. Gutierrez [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=2KSNiPQAAAAJ&hl=en)
-- Brian M. Sadler [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=s9eCQn4AAAAJ&hl=en)
-- William J. Beksi [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14pix>](https://scholar.google.com/citations?user=lU2Z7MMAAAAJ&hl=en)
+- Nolan B. Gutierrez [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=2KSNiPQAAAAJ&hl=en)
+- Brian M. Sadler [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=s9eCQn4AAAAJ&hl=en)
+- William J. Beksi [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=lU2Z7MMAAAAJ&hl=en)
 
 ## Citation
 If you find this project useful, then please consider citing our project.  
@@ -49,7 +61,6 @@ Set up your environment and install the required dependencies:
 1. Install Python 3.10 on your Ubuntu 22 system. You can use pyenv to manage multiple Python versions on your machine.
 
 2. Clone the repository:
-together with 
    ```bash
    git clone https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git
    cd Agent-Deception-Via-Polynomial-Path-Planning
@@ -86,7 +97,7 @@ for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  -
 The command above runs the algorithm 10 times with the specified input parameters. You can modify the input parameters as needed to suit your specific use case.
 
 Here's a brief explanation of the input parameters:
-
+```
 - --degree: Degree of the polynomial to be fitted
 - --beta: Regularization parameter
 - --alternative_goals: Alternative goal locations
@@ -104,7 +115,7 @@ Here's a brief explanation of the input parameters:
 - --reg_beta: Regularization parameter for the trajectory fitting
 - --point_beta: Point constraint regularization parameter
 - --traj_folder_prefix: Prefix for the trajectory folder name
-
+```
 
 After each run, the resulting trajectories are stored in the
 `trajectories/` folder by default. To visualize all of the trajectories using matplotlib,
