@@ -18,10 +18,10 @@ commands in sequence:
 
 Set up your environment and install the required dependencies:
 
-1. Install Python 3.10.9 on your Ubuntu 22 system. You can use pyenv to manage multiple Python versions on your machine.
+1. Install Python 3.10 on your Ubuntu 22 system. You can use pyenv to manage multiple Python versions on your machine.
 
 2. Clone the repository:
-
+together with 
    ```bash
    git clone https://github.com/nolan-gutierrez/deceptive-path-planning.git
    cd deceptive-path-planning
@@ -53,7 +53,7 @@ To run the deceptive polynomial path planning algorithm, follow these instructio
 2. Use the following command to execute the `poly_curve_refined.py` script with the desired input parameters:
 
 ```bash
-for i in {1..10}; do python poly_curve_refined.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 --point_beta 100 --traj_folder_prefix ablation_; done
+for i in {1..10}; do test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000  --traj_folder_prefix ablation_; done
 ```
 The command above runs the algorithm 10 times with the specified input parameters. You can modify the input parameters as needed to suit your specific use case.
 
@@ -88,6 +88,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 This project was made possible through the support of the Graduate Assistance in Areas of National Need (GAANN) Fellowship, a program funded by the U.S. Department of Education. We are grateful for the financial assistance provided by the GAANN Fellowship, which enabled us to develop and advance this research.
 
-
+together with 
 
 ## Citation
