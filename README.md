@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 To run the deceptive polynomial path planning algorithm, follow these instructions:
 
-1. Ensure that you have activated your virtual environment and installed the required dependencies from the `requirements.txt` file.
+1. Ensure that you have activated your conda environment and installed the required dependencies from the `requirements.txt` file.
 
 2. Use the following command to execute the `test.py` script with the desired input parameters:
 
