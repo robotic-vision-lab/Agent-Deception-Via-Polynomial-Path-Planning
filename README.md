@@ -44,7 +44,7 @@ If you find this project useful, please consider citing it using the following e
 ```bibtex
 @misc{gutierrez2025agent,
   author       = {Gutierrez, Nolan and Beksi, William J. and Sadler, Brian M.},
-  title        = {Agent Deception Via Polynomial Path Planning},
+  title        = {Agent deception via polynomial path planning},
   year         = 2025,
   howpublished = {\url{https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git}},
 }
