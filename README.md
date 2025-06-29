@@ -15,13 +15,10 @@ simultaneously
 misleading an adversarial observer into predicting a false goal. 
 
 ![alt text 1](docs/overview_figure/overview_deception.png) 
-*Figure 1. An overview of DPPP. On
-the left side are the factors of deception that our planner uses to generate
-deceptive behaviors. These factors include goal/decoy proximity (top
-row), goal/decoy alignment (bottom left), and the
-apparent goal of the agent, as inferred from its movement trend. As shown on the
-right,  an adversary must consider these factors when determining the agent's
-intentions, while the agent strategically exploits these factors to generate deceptive plans.*
+*Figure 1. Overview of DPPP. The left side shows the deception factors used by the planner, including goal/decoy proximity (top row), goal/decoy alignment (bottom left), and the agent's apparent goal inferred from trajectory trends. As shown on the
+right, an adversary must consider these factors when determining the agent's
+intentions, while the agent strategically exploits these factors to generate
+deceptive plans.*
 
 ## Table of Contents
 - [Overview](#overview)
