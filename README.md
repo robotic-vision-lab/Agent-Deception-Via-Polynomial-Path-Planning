@@ -1,14 +1,14 @@
 # Agent Deception Via Polynomial Path Planning
  
 ## Overview
-Deceptive path planning involves an intelligent agent creating a plan that hides
-its true intentions while appearing to pursue an alternative goal.
-Deception is a crucial tool for misleading and confusing adversaries, especially
+Deceptive path planning enables an intelligent agent to conceal its true intentions while appearing to pursue an alternative goal.
+Deception is a crucial tool for misleading and confusing adversaries,
+particularly
 in sectors such as security, transportation, and surveillance, where the ability
 to conceal true intentions may lead to significant advantages.  
  
 
-This repository provides the source code that implements our deceptive
+This repository contains the implementation of our deceptive
 polynomial path planner (DPPP) shown in Fig. 1. DPPP generates deceptive
 behaviors that guide an agent towards a target destination while
 simultaneously
@@ -115,7 +115,8 @@ You can modify the input parameters to suit your specific use case or scenario. 
 --obs_on: Enable/disable the obstacle constraint
 --title: Title for the output files
 --ambiguity_on: Enable/disable the ambiguity constraint
---alt_angle_beta: Alternative angle regularization parameter
+--alt_angle_beta: --alt_angle_beta: Strength of the alignment constraint with the decoy goal (encourages trajectories to appear goal-aligned)
+
 --curvature_on: Enable/disable the curvature constraint
 --reg_beta: Regularization parameter for the trajectory fitting
 --point_beta: Point constraint regularization parameter
@@ -132,7 +133,7 @@ python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
 ## License
 
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## References
 
