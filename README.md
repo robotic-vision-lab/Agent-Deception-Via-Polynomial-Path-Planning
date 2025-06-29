@@ -138,5 +138,5 @@ This project utilizes code from the following project:
 
 This research was supported by the Graduate Assistance in Areas of National Need (GAANN) Fellowship, funded by the U.S. Department of Education. We thank the GAANN program for providing financial support that enabled the continued development of this project.
 
-Initial development and early evaluation of the deceptive polynomial path planner were conducted during an internship at the U.S. Army Combat Capabilities Development Command (DEVCOM) Army Research Laboratory, as part of the DoD’s HBCU/MI Summer Research Internship Program. We are grateful for the opportunity and resources provided by this program.
+Initial development and early evaluation of the deceptive polynomial path planner were conducted during an internship at the U.S. Army Combat Capabilities Development Command Army Research Laboratory, as part of the DoD’s HBCU/MI Summer Research Internship Program. We are grateful for the opportunity and resources provided by this program.
 
