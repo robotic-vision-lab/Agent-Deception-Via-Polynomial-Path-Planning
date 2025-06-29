@@ -91,7 +91,7 @@ polynomial degrees. Each path is evaluated using the following metrics:
 Distance Traveled (DT), Alignment Deception Index (ADI), Distance Deception
 Index (DDI), Alignment Deception Impact Index (ADII), and Distance Deception
 Impact Index (DDII). Lower values of ADI, DDI, ADII, and DDII indicate higher
-deceptiveness, while lower DT values indicate greater efficiency.
+deceptiveness, while lower DT values indicate greater efficiency.  
 
 You can modify the input parameters to suit your specific use case or scenario.
 Here's a brief explanation of the input parameters:
@@ -132,8 +132,8 @@ This project utilizes code from the following project:
 This research was supported by the U.S. Department of Education's Graduate
 Assistance in Areas of National Need (GAANN) Fellowship. Initial development
 and early evaluation of DPPP was conducted during an internship at the U.S.
-Army Combat Capabilities Development Command Army Research Laboratory, as part
-of the DoD's HBCU/MI Summer Research Internship Program. 
+Army Combat Capabilities Development Command Army Research Laboratory (DEVCOM
+ARL), as part of the DoD's HBCU/MI Summer Research Internship Program. 
 
 ### License
 
