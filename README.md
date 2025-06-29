@@ -99,12 +99,7 @@ It is useful for generating multiple trajectories under different
 configurations. This command was used to generate the deceptive paths shown in
 Fig. 2.  
 
-After each run, the resulting trajectories are stored in the
-`trajectories/` folder by default. To visualize all of the trajectories using matplotlib,
-execute the following command:
-```bash
-python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
-``` 
+
 
 
 You can modify the input parameters to suit your specific use case or scenario. Here's a brief explanation of the input parameters:
@@ -127,7 +122,12 @@ You can modify the input parameters to suit your specific use case or scenario. 
 --traj_folder_prefix: Prefix for the trajectory folder name
 ```
 
-
+After each run, the resulting trajectories are stored in the `trajectories/`
+folder by default. To visualize all of the trajectories (e.g., Fig. 2) using
+matplotlib, execute the following command:
+```bash
+python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
+``` 
 
 ## License
 
