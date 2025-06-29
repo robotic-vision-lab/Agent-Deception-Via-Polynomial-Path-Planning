@@ -91,7 +91,7 @@ polynomial degrees. Each path is evaluated using the following metrics:
 Distance Traveled (DT), Alignment Deception Index (ADI), Distance Deception
 Index (DDI), Alignment Deception Impact Index (ADII), and Distance Deception
 Impact Index (DDII). Lower values of ADI, DDI, ADII, and DDII indicate higher
-deceptiveness, while lower DT values indicate greater efficiency.  
+deceptiveness, while lower DT values indicate greater efficiency.\ 
 
 You can modify the input parameters to suit your specific use case or scenario.
 Here's a brief explanation of the input parameters:
