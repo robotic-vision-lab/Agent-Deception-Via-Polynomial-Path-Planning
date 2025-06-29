@@ -55,7 +55,7 @@ If you find this project useful, please consider citing it using the following e
 #### Requirements
 
 - Ubuntu 22
-- [Miniconda3](https://www.https://www.anaconda.com/docs/getting-started/miniconda/install)
+- [Miniconda3](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions)
 
 #### Setting up your environment
 After installing Miniconda3, run the following: 
