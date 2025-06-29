@@ -7,20 +7,21 @@ Deception is a crucial tool for misleading and confusing adversaries, especially
 in sectors such as security, transportation, and surveillance, where the ability
 to conceal true intentions may lead to significant advantages.  
  
-![alt text 1](docs/overview_figure/overview_deception.png) 
-*Figure 1. An overview of the deceptive polynomial path planner. On
-the left side are the factors of deception that our planner uses to generate
-deceptive behaviors. These factors include goal/decoy proximity (top
-row), goal/decoy alignment (bottom left), and the
-apparent goal of the agent, as inferred from its movement trend. As shown on the
-right,  an adversary must consider these factors when determining the agent's
-intentions, while the agent strategically exploits these factors to generate deceptive plans.*
 
 This repository provides the source code that implements our deceptive
 polynomial path planner (DPPP) shown in Fig. 1. DPPP generates deceptive
 behaviors that guide an agent towards a target destination while
 simultaneously
 misleading an adversarial observer into predicting a false goal. 
+
+![alt text 1](docs/overview_figure/overview_deception.png) 
+*Figure 1. An overview of DPPP. On
+the left side are the factors of deception that our planner uses to generate
+deceptive behaviors. These factors include goal/decoy proximity (top
+row), goal/decoy alignment (bottom left), and the
+apparent goal of the agent, as inferred from its movement trend. As shown on the
+right,  an adversary must consider these factors when determining the agent's
+intentions, while the agent strategically exploits these factors to generate deceptive plans.*
 
 ## Table of Contents
 - [Overview](#overview)
