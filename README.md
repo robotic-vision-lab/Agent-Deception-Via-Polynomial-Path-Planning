@@ -8,7 +8,7 @@ in sectors such as security, transportation, and surveillance, where the ability
 to conceal true intentions may lead to significant advantages.  
  
 ![alt text 1](docs/overview_figure/overview_deception.png) 
-*Figure 1. Illustration of the deceptive polynomial path planner pipeline. On
+*Figure 1. An overview of the deceptive polynomial path planner. On
 the left side are the factors of deception that our planner uses to generate
 deceptive behaviors. These factors include goal/decoy proximity (top
 row), goal/decoy alignment (bottom left), and the
@@ -17,7 +17,7 @@ right,  an adversary must consider these factors when determining the agent's
 intentions, while the agent strategically exploits these factors to generate deceptive plans.*
 
 This repository provides the source code that implements our deceptive
-polynomial path planner shown in Fig. 1. The planner generates deceptive
+polynomial path planner (DPPP) shown in Fig. 1. DPPP generates deceptive
 behaviors that guide an agent towards a target destination while
 simultaneously
 misleading an adversarial observer into predicting a false goal. 
@@ -78,7 +78,7 @@ cd Agent-Deception-Via-Polynomial-Path-Planning
 pip install -r requirements.txt
 ```
 ## Getting Started 
-After installing the environment, you can test the planner by running one of the example configurations:
+After installing the environment, you can test DPPP by running one of the example configurations:
 
 ```bash
 python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal [1.5,9.5] --alternative_goals "[[9.5,9.5]]" --short_on --ambiguity_on --reg_beta 100000 --curvature_on --beta 100 --reg_on --alt_angle_beta 1000
@@ -95,7 +95,7 @@ For batch execution or parameter sweeps, try the following example:
 ```bash
 for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]"  --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
 ```
-This command runs the planner 10 times using a shell loop, with varied output titles. It is useful for generating multiple trajectories under different configurations.
+This command runs DPPP 10 times within a shell loop, with varied output titles. It is useful for generating multiple trajectories under different configurations.
 
 You can modify the input parameters to suit your specific use case or scenario. Here's a brief explanation of the input parameters:
 ```
@@ -139,5 +139,5 @@ This project utilizes code from the following project:
 
 This research was supported by the Graduate Assistance in Areas of National Need (GAANN) Fellowship, funded by the U.S. Department of Education. We thank the GAANN program for providing financial support that enabled the continued development of this project.
 
-Initial development and early evaluation of the deceptive polynomial path planner were conducted during an internship at the U.S. Army Combat Capabilities Development Command Army Research Laboratory, as part of the DoD’s HBCU/MI Summer Research Internship Program. We are grateful for the opportunity and resources provided by this program.
+Initial development and early evaluation of DPPP were conducted during an internship at the U.S. Army Combat Capabilities Development Command Army Research Laboratory, as part of the DoD’s HBCU/MI Summer Research Internship Program. We are grateful for the opportunity and resources provided by this program.
 
