@@ -80,7 +80,7 @@ pip install -r requirements.txt
 After installing the environment, you can test the planner by running one of the example configurations:
 
 ```bash
-python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal [1.5,9.5] --alternative_goals "[[9.5,9.5]]" --short_on --ambiguity_on --reg_beta 100000 --curvature_on --beta 100 --reg_on --alt_angle_beta 1000  --curvature_on
+python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal [1.5,9.5] --alternative_goals "[[9.5,9.5]]" --short_on --ambiguity_on --reg_beta 100000 --curvature_on --beta 100 --reg_on --alt_angle_beta 1000
 ```
 
 See the  [Usage](#usage) section below for more options.
@@ -95,7 +95,7 @@ For batch execution or parameter sweeps, try the following example:
 for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]"  --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
 ```
 The \$i ensures the loop index is interpreted literally in the shell. If you're not using a loop, remove the backslash. 
-This command runs the planner 10 times using a shell loop and varied output titles. It is useful for generating multiple trajectories with different seeds or settings.
+This command runs the planner 10 times using a shell loop, with varied output titles. It is useful for generating multiple trajectories under different configurations.
 
 You can modify the input parameters to suit your specific use case or scenario. Here's a brief explanation of the input parameters:
 ```
