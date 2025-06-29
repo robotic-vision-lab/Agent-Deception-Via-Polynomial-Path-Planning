@@ -102,11 +102,11 @@ Here's a brief explanation of the input parameters:
 --alternative_goals: Alternative goal locations
 --circle_location: Location of the circle used in the path planning
 --start_location: Start location of the robot/vehicle
---goal: The true goal location
+--goal: True goal location
 --circle_beta: Circle constraint regularization parameter
 --short_on: Enable/disable the shortest path constraint
 --obs_on: Enable/disable the obstacle constraint
---title: Title for the output files
+--title: Title for the output file
 --ambiguity_on: Enable/disable the ambiguity constraint
 --alt_angle_beta: Strength of the alignment constraint with the decoy goal (encourages trajectories to appear goal-aligned)
 --curvature_on: Enable/disable the curvature constraint
