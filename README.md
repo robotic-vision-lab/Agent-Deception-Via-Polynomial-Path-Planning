@@ -3,7 +3,7 @@
 ## Overview
 Deceptive path planning enables an intelligent agent to conceal its true intentions while appearing to pursue an alternative goal.
 Deception is a crucial tool for misleading and confusing adversaries,
-particularly
+especially
 in sectors such as security, transportation, and surveillance, where the ability
 to conceal true intentions may lead to significant advantages.  
  
@@ -115,7 +115,7 @@ You can modify the input parameters to suit your specific use case or scenario. 
 --obs_on: Enable/disable the obstacle constraint
 --title: Title for the output files
 --ambiguity_on: Enable/disable the ambiguity constraint
---alt_angle_beta: --alt_angle_beta: Strength of the alignment constraint with the decoy goal (encourages trajectories to appear goal-aligned)
+--alt_angle_beta: Strength of the alignment constraint with the decoy goal (encourages trajectories to appear goal-aligned)
 --curvature_on: Enable/disable the curvature constraint
 --reg_beta: Regularization parameter for the trajectory fitting
 --point_beta: Point constraint regularization parameter
