@@ -1,56 +1,60 @@
-# Agent Deception Via Polynomial Path Planning
+## Agent Deception Via Polynomial Path Planning
  
-## Overview
-Deceptive path planning enables an intelligent agent to conceal its true intentions while appearing to pursue an alternative goal.
-Deception is a crucial tool for misleading and confusing adversaries,
-especially
-in sectors such as security, transportation, and surveillance, where the ability
-to conceal true intentions may lead to significant advantages.  
- 
+### Overview
+Deceptive path planning enables an intelligent agent to conceal its true
+intentions while appearing to pursue an alternative goal. Deception is a
+crucial tool for misleading and confusing adversaries, especially in sectors
+such as security, transportation, and surveillance, where the ability to
+conceal true intentions may lead to significant advantages.  This repository
+contains the implementation of our deceptive polynomial path planner (DPPP). As
+shown in Figure 1, DPPP generates deceptive behaviors that guide an agent
+towards a target destination while simultaneously misleading an adversarial
+observer into predicting a false goal. 
 
-This repository contains the implementation of our deceptive
-polynomial path planner (DPPP) shown in Fig. 1. DPPP generates deceptive
-behaviors that guide an agent towards a target destination while
-simultaneously
-misleading an adversarial observer into predicting a false goal. 
+<p align="center">
+<img src="docs/overview_figure/overview_deception.png" alt="overview_deception" width="400"/>
+</p>
+*Figure 1. Overview of DPPP. The left side shows the deception factors used by
+the planner, including goal/decoy proximity (top row), goal/decoy alignment
+(bottom left), and the agent's apparent goal inferred from trajectory trends.
+As shown on the right, an adversary must consider these factors when
+determining the agent's intentions, while the agent strategically exploits
+these factors to generate deceptive plans.*
 
-![alt text 1](docs/overview_figure/overview_deception.png) 
-*Figure 1. Overview of DPPP. The left side shows the deception factors used by the planner, including goal/decoy proximity (top row), goal/decoy alignment (bottom left), and the agent's apparent goal inferred from trajectory trends. As shown on the
-right, an adversary must consider these factors when determining the agent's
-intentions, while the agent strategically exploits these factors to generate
-deceptive plans.*
-
-## Table of Contents
+### Table of Contents
 - [Overview](#overview)
 - [Authors](#authors)
 - [Citation](#citation)
 - [Installation](#installation)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [License](#license)
 - [References](#references)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgments](#acknowledgements)
+- [License](#license)
 
-## Authors
+### Authors
 
 - Nolan B. Gutierrez [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=2KSNiPQAAAAJ&hl=en)
 - Brian M. Sadler [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=s9eCQn4AAAAJ&hl=en)
 - William J. Beksi [<img src="./docs/google_scholar_logo/google_scholar_logo.svg" width=14px>](https://scholar.google.com/citations?user=lU2Z7MMAAAAJ&hl=en)
 
-## Citation
+### Citation
 
-If you find this project useful, please consider citing it using the following entry:
+If you find this project useful, then please consider citing our work.
 
 ```bibtex
-@misc{gutierrez2025agent,
-  author       = {Gutierrez, Nolan and Beksi, William J and Sadler, Brian M},
-  title        = {Agent deception via polynomial path planning},
-  year         = 2025,
-  howpublished = {\url{https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git}},
+article{gutierrez2025agent,
+  title={Agent Deception via Polynomial Path Planning},
+  author={Gutierrez, Nolan B and Sadler, Brian M and Beksi, William J},
+  journal={Engineering Applications of Artificial Intelligence},
+  number={},
+  volume={},
+  pages={},
+  year={2025}
 }
 ```
 
-## Installation
+### Installation
 
 #### Requirements
 
@@ -58,51 +62,52 @@ If you find this project useful, please consider citing it using the following e
 - [Miniconda3](https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions)
 
 #### Setting up your environment
-After installing Miniconda3, run the following: 
+After installing Miniconda3, create a new conda environment with Python 3.10:
 
-```bash
-# Create a new conda environment with Python 3.10
-conda create -n deception_env python=3.10 -y
-conda activate deception_env
+    $ conda create -n deception_env python=3.10 -y
+    $ conda activate deception_env
 
-# Clone the repository
-git clone https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git
-cd Agent-Deception-Via-Polynomial-Path-Planning
+Then, clone the repository:
 
-# Install required Python packages
-pip install -r requirements.txt
-```
-## Getting Started 
-After installing the environment, you can test DPPP by running one of the example configurations:
+    $ git clone https://github.com/robotic-vision-lab/Agent-Deception-Via-Polynomial-Path-Planning.git
+    $ cd Agent-Deception-Via-Polynomial-Path-Planning
 
-```bash
-python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal [1.5,9.5] --alternative_goals "[[9.5,9.5]]" --short_on --ambiguity_on --reg_beta 100000 --curvature_on --beta 100 --reg_on --alt_angle_beta 1000
-```
+Finally, install the required Python packages:
+
+    $ pip install -r requirements.txt
+
+### Getting Started 
+After installing the environment, you can test DPPP by running one of the
+example configurations:
+
+    $ python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal [1.5,9.5] --alternative_goals "[[9.5,9.5]]" --short_on --ambiguity_on --reg_beta 100000 --curvature_on --beta 100 --reg_on --alt_angle_beta 1000
 
 See the  [Usage](#usage) section below for more options.
 
-## Usage
-<p align="center">
-<img src="docs/example_images/trajectories.png" alt="model_architecture"
-width="1000"/>
-</p>
-
-*Figure 2. Visualization of deceptive paths generated by DPPP using different polynomial degrees. Each path is evaluated using the following metrics: Distance Traveled (DT), Alignment Deception Index (ADI), Distance Deception Index (DDI), Alignment Deception Impact Index (ADII), and Distance Deception Impact Index (DDII). Lower values of ADI, DDI, ADII, and DDII indicate higher deceptiveness, while lower DT values indicate greater efficiency.*
-
+### Usage
 For batch execution or parameter sweeps, try the following example:
 
-```bash
-for i in {1..10}; do python deceptive_polynomials/test.py --degree $i --beta 0 --alternative_goals "[[9.5,9.5]]"  --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Degree_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
+    $ for i in {1..10}; do python deceptive_polynomials/test.py --degree $i --beta 0 --alternative_goals "[[9.5,9.5]]"  --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Degree_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
 ```
-This command runs DPPP 10 times within a shell loop, with varied output titles.
-It is useful for generating multiple trajectories under different
-configurations. This command was used to generate the deceptive paths shown in
-Fig. 2.  
 
+This command runs DPPP 10 times, within a shell loop, with varied output
+titles. It is useful for generating multiple trajectories under different
+configurations. The command was used to generate the deceptive paths shown in
+Figure 2.  
 
+<p align="center">
+<img src="docs/example_images/trajectories.png" alt="model_architecture" width="400"/>
+</p>
+*Figure 2. Visualization of deceptive paths generated by DPPP using different
+polynomial degrees. Each path is evaluated using the following metrics:
+Distance Traveled (DT), Alignment Deception Index (ADI), Distance Deception
+Index (DDI), Alignment Deception Impact Index (ADII), and Distance Deception
+Impact Index (DDII). Lower values of ADI, DDI, ADII, and DDII indicate higher
+deceptiveness, while lower DT values indicate greater efficiency.*
 
+You can modify the input parameters to suit your specific use case or scenario.
+Here's a brief explanation of the input parameters:
 
-You can modify the input parameters to suit your specific use case or scenario. Here's a brief explanation of the input parameters:
 ```
 --degree: Degree of the polynomial to be fitted
 --beta: Regularization parameter
@@ -123,26 +128,25 @@ You can modify the input parameters to suit your specific use case or scenario. 
 ```
 
 After each run, the resulting trajectories are stored in the `trajectories/`
-folder by default. To visualize all of the trajectories (e.g., Fig. 2) using
+folder by default. To visualize all of the trajectories (e.g., Figure. 2) using
 matplotlib, execute the following command:
-```bash
-python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
-``` 
 
-## License
+    $ python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
 
-
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-## References
+### References
 
 This project utilizes code from the following project:  
 
 * PythonRobotics    https://github.com/AtsushiSakai/PythonRobotics
 
-## Acknowledgements
+### Acknowledgments
 
-This research was supported by the Graduate Assistance in Areas of National Need (GAANN) Fellowship, funded by the U.S. Department of Education. We thank the GAANN program for providing financial support that enabled the continued development of this project.
+This research was supported by the U.S. Department of Education's Graduate
+Assistance in Areas of National Need (GAANN) Fellowship. Initial development
+and early evaluation of DPPP was conducted during an internship at the U.S.
+Army Combat Capabilities Development Command Army Research Laboratory, as part
+of the DoD's HBCU/MI Summer Research Internship Program. 
 
-Initial development and early evaluation of DPPP were conducted during an internship at the U.S. Army Combat Capabilities Development Command Army Research Laboratory, as part of the DoD’s HBCU/MI Summer Research Internship Program. We are grateful for the opportunity and resources provided by this program.
+### License
 
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
