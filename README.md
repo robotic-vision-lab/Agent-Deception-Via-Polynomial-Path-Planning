@@ -98,22 +98,22 @@ This command runs the planner 10 times using a shell loop, with varied output ti
 
 You can modify the input parameters to suit your specific use case or scenario. Here's a brief explanation of the input parameters:
 ```
- --degree: Degree of the polynomial to be fitted
- --beta: Regularization parameter
- --alternative_goals: Alternative goal locations
- --circle_location: Location of the circle used in the path planning
- --start_location: Start location of the robot/vehicle
- --goal: The true goal location
- --circle_beta: Circle constraint regularization parameter
- --short_on: Enable/disable the shortest path constraint
- --obs_on: Enable/disable the obstacle constraint
- --title: Title for the output files
- --ambiguity_on: Enable/disable the ambiguity constraint
- --alt_angle_beta: Alternative angle regularization parameter
- --curvature_on: Enable/disable the curvature constraint
- --reg_beta: Regularization parameter for the trajectory fitting
- --point_beta: Point constraint regularization parameter
- --traj_folder_prefix: Prefix for the trajectory folder name
+--degree: Degree of the polynomial to be fitted
+--beta: Regularization parameter
+--alternative_goals: Alternative goal locations
+--circle_location: Location of the circle used in the path planning
+--start_location: Start location of the robot/vehicle
+--goal: The true goal location
+--circle_beta: Circle constraint regularization parameter
+--short_on: Enable/disable the shortest path constraint
+--obs_on: Enable/disable the obstacle constraint
+--title: Title for the output files
+--ambiguity_on: Enable/disable the ambiguity constraint
+--alt_angle_beta: Alternative angle regularization parameter
+--curvature_on: Enable/disable the curvature constraint
+--reg_beta: Regularization parameter for the trajectory fitting
+--point_beta: Point constraint regularization parameter
+--traj_folder_prefix: Prefix for the trajectory folder name
 ```
 
 After each run, the resulting trajectories are stored in the
@@ -132,7 +132,7 @@ python deceptive_polynomials/utils/plot_trajectories.py --folder trajectories
 
 This project utilizes code from the following project:  
 
-* PythonRobotics https://github.com/AtsushiSakai/PythonRobotics
+* PythonRobotics    https://github.com/AtsushiSakai/PythonRobotics
 
 ## Acknowledgements
 
