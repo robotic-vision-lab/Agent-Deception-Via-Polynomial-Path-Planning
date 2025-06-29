@@ -25,6 +25,7 @@ misleading an adversarial observer into predicting a false goal.
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
+- [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Citation](#citation)
 - [License](#license)
@@ -75,7 +76,14 @@ cd Agent-Deception-Via-Polynomial-Path-Planning
 # Install required Python packages
 pip install -r requirements.txt
 ```
+## Getting Started 
+After installing the environment, you can test the planner by running one of the example configurations:
 
+```bash
+python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal [1.5,9.5] --alternative_goals "[[9.5,9.5]]" --short_on --ambiguity_on --reg_beta 100000 --curvature_on --beta 100 --reg_on --alt_angle_beta 1000  --curvature_on
+```
+
+See the  [Usage](#usage) section below for more options.
 
 ## Usage
 
@@ -84,6 +92,7 @@ To run the planner, follow these steps:
 1. Ensure that you have activated your conda environment and installed the required dependencies from the `requirements.txt` file.
 
 2. Use the following command to execute the `test.py` script with the desired input parameters:
+
 
 ```bash
 for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
