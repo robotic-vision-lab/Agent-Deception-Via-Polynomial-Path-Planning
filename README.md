@@ -86,26 +86,22 @@ python deceptive_polynomials/test.py --degree 5 --start_location [5.5,0] --goal 
 See the  [Usage](#usage) section below for more options.
 
 ## Usage
+For batch execution or parameter sweeps, try the following example:
 
-To run the planner, follow these steps:
 
-1. Ensure that you have activated your conda environment and installed the required dependencies from the `requirements.txt` file.
-
-2. Use the following command to execute the `test.py` script with the desired input parameters:
 
 
 ```bash
-for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]" --points "[[9.5,9.5]]" --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
+for i in {1..10}; do python deceptive_polynomials/test.py --degree 5 --beta 0  --alternative_goals "[[9.5,9.5]]"  --circle_location "(7,-8)" --start_location [5.5,1.5] --goal [1.5,9.5] --circle_beta 100   --short_on --obs_on  --title "Exg_Align_Coeff_Dist_Smooth_\$i"  --ambiguity_on --alt_angle_beta 1000  --curvature_on  --reg_beta 100000 ; done
 ```
-The \$i ensures that the loop index is correctly interpreted in the shell. If you're not using a shell loop, remove the backslash.
-The command above runs the algorithm 10 times with the specified input parameters. You can modify the input parameters as needed to suit your specific use case.
+The \$i ensures the loop index is interpreted literally in the shell. If you're not using a loop, remove the backslash. 
+This command runs the planner 10 times using a shell loop and varied output titles. It is useful for generating multiple trajectories with different seeds or settings.
 
-Here's a brief explanation of the input parameters:
+You can modify the input parameters to suit your specific use case or scenario. Here's a brief explanation of the input parameters:
 ```
---degree: Degree of the polynomial to be fitted
---beta: Regularization parameter
+ --degree: Degree of the polynomial to be fitted
+ --beta: Regularization parameter
  --alternative_goals: Alternative goal locations
- --points: Points on the trajectory
  --circle_location: Location of the circle used in the path planning
  --start_location: Start location of the robot/vehicle
  --goal: The true goal location
@@ -119,7 +115,6 @@ Here's a brief explanation of the input parameters:
  --reg_beta: Regularization parameter for the trajectory fitting
  --point_beta: Point constraint regularization parameter
  --traj_folder_prefix: Prefix for the trajectory folder name
- --points: Optional trajectory interpolation or constraint points (often same as goal)
 ```
 
 After each run, the resulting trajectories are stored in the
