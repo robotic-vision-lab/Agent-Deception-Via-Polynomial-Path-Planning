@@ -36,9 +36,8 @@ article{gutierrez2025agent,
   title={Agent Deception via Polynomial Path Planning},
   author={Gutierrez, Nolan B and Sadler, Brian M and Beksi, William J},
   journal={Engineering Applications of Artificial Intelligence},
-  number={},
-  volume={},
-  pages={},
+  volume={159},
+  pages={111205},
   year={2025}
 }
 ```
