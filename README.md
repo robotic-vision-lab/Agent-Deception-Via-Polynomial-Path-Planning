@@ -32,13 +32,14 @@ these factors to generate deceptive plans.
 If you find this project useful, then please consider citing our work.
 
 ```bibtex
-article{gutierrez2025agent,
-  title={Agent Deception via Polynomial Path Planning},
+@article{gutierrez2025agent,
+  title={Agent deception via polynomial path planning},
   author={Gutierrez, Nolan B and Sadler, Brian M and Beksi, William J},
   journal={Engineering Applications of Artificial Intelligence},
   volume={159},
   pages={111205},
-  year={2025}
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
